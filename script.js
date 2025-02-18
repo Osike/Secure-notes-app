@@ -91,6 +91,20 @@ function searchNotes() {
     });
 }
 
+document.getElementById('logoutButton').addEventListener('click', function () {
+    logout();
+});
+
+function logout() {
+    // Clear notes and reset the interface
+    notes = [];
+    currentNoteIndex = null;
+    document.getElementById('notesList').innerHTML = '';
+    document.getElementById('noteForm').reset();
+    document.getElementById('notes').style.display = 'none';
+    document.getElementById('auth').style.display = 'block';
+}
+
 // Simulate showing notes after login
 function showNotes() {
     document.getElementById('auth').style.display = 'none';

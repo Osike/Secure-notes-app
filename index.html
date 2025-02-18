@@ -9,7 +9,6 @@
 <body>
     <div class="container">
         <h1>Secure Notes</h1>
-        
         <div id="auth">
             <h2>Login</h2>
             <form id="loginForm">
@@ -29,7 +28,6 @@
             </form>
             <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
         </div>
-
         <div id="notes" style="display: none;">
             <h2>Your Notes</h2>
             <input type="text" id="search" placeholder="Search notes..." oninput="searchNotes()">
@@ -38,10 +36,10 @@
                 <textarea id="noteContent" placeholder="Write your note here..." required></textarea>
                 <button type="submit">Save Note</button>
             </form>
+            <button id="logoutButton">Logout</button>
             <div id="notesList"></div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
